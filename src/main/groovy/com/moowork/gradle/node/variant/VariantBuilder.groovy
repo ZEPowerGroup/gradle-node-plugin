@@ -24,9 +24,9 @@ class VariantBuilder
 
         if ( variant.windows )
         {
-            variant.tarGzDependency = getTarGzDependency( 'linux', 'x86' )
+            variant.tarGzDependency = getTarGzDependency( 'linux', 'x64' )
             variant.exeDependency = getExeDependency()
-            variant.npmDir = getNpmDir( 'linux', 'x86' )
+            variant.npmDir = getNpmDir( 'linux', 'x64' )
             variant.nodeExec = new File( variant.nodeBinDir, 'node.exe' ).absolutePath
         }
         else
